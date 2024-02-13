@@ -53,7 +53,7 @@ export const AppLayout = ({ navCollapsed, navType, location }) => {
         <Layout className="app-layout">
           <div className={`app-content ${isNavTop ? 'layout-top-nav' : ''}`}>
             <PageHeader display={currentRouteInfo?.breadcrumb} title={currentRouteInfo?.title} />
-            <Content>
+            <Content style={{height: '100%'}}>
               <AppViews />
             </Content>
           </div>
